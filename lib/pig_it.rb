@@ -3,7 +3,6 @@ class PigIt
         array = string.split
         alphabet = ('a'..'z')
         pigged = array.map do |word|
-            # binding.pry
             if word.chars.all?(/^[A-Za-z]+$/)
                 word.chars.rotate.join + 'ay'
             else
